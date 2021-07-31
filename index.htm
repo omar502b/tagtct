@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0027) -->
+<!-- saved from url=(0027)https://tyler756.softr.app/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         
@@ -13,7 +13,7 @@
         
         
 
-        <link rel="icon" type="image/x-icon" href="/">
+        <link rel="icon" type="image/x-icon" href="https://tyler756.softr.app/">
 
         
         
@@ -387,7 +387,7 @@
                     }
                   }
 
-                
+                  
                   }
 
                   function isInCurrentSection(elTop, elBottom) {
@@ -439,8 +439,13 @@
                   init();
                   setInterval(() => init(), 50 * 1000);
                 })();
+        
+        <!-- Scripts -->
+        <script src="./tyler756.softr.app_files/jquery.min.js.تنزيل"></script>
+        <script src="./tyler756.softr.app_files/popper.min.js.تنزيل"></script>
+        <script src="./tyler756.softr.app_files/bootstrap.min.js.تنزيل"></script>
 
-      
+        <script type="text/javascript">
             ;(function () {   $('.navbar-toggler-icon').click(function () {  $('.mob-menu-content').toggleClass('show');   });   $('.navbar-close').click(function () {  $('.mob-menu-content').toggleClass('show');   });   oneButtonView($(window));   $(window).on('resize', function () {  var win = $(this);  oneButtonView(win)   });    /* close the mobile menu */   $('.mob-menu-body a').click(function () {    if($(this).attr('aria-controls')) {     return;    }  $('.mob-menu-content').toggleClass('show');   });    var bgColor = window.getComputedStyle(document.querySelector('nav#home_header1'), null).getPropertyValue('background-color');   if (lightOrDark(bgColor) === 'dark') {  $('nav#home_header1').removeClass('navbar-light');  $('nav#home_header1').addClass('navbar-dark');   $('#home_header1 .navbar-close i').css('color', '#ffffff');   $('#home_header1 .arrow').css('border-left', '2px solid #ffffff');  $('#home_header1 .arrow').css('border-top', '2px solid #ffffff');   }   profileIconSizeCalculation();   $('#home_header1 a.dropdown-item').hover(function () {  $(this).css('background-color', bgColor);   });    $('#home_header1 .navbar-nav .dropdown-menu').css('background-color', bgColor);   $('#home_header1 .mob-menu-content').css('background-color', bgColor);   $('#home_header1 .link').css('background-color', bgColor);     function lightOrDark(color) {   /* Variables for red, green, blue values */  var r, g, b, hsp;   /* Check the format of the color, HEX or RGB? */  if (color.match(/^rgb/)) {     /* If HEX --> store the red, green, blue values in separate variables */    color = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);     r = color[1];    g = color[2];    b = color[3];  }  else {     /* If RGB --> Convert it to HEX: http://gist.github.com/983661 */    color = +("0x" + color.slice(1).replace(   color.length < 5 && /./g, '$&$&'));     r = color >> 16;    g = color >> 8 & 255;    b = color & 255;  }   /* HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html */  hsp = Math.sqrt(    0.299 * (r * r) +    0.587 * (g * g) +    0.114 * (b * b)  );   /* Using the HSP value, determine whether the color is light or dark */  if (hsp > 127.5) {     return 'light';  }  else {     return 'dark';  }   }    function oneButtonView(win) {  if (win.width() <= 414) {    if ($('.navbar-nav').hasClass('empty-links') && $('.navbar-nav').hasClass('one-button')) {   if(!$('.profile-dropdown-toggle').length) {     $('.desktop-menu').hide();     $('.toggle-button').show();   }    }  }  if (win.width() <= 992 && win.width() > 414) {    if ($('.navbar-nav').hasClass('empty-links') && $('.navbar-nav').hasClass('one-button')) {   $('.desktop-menu').show();   $('.toggle-button').hide();    }  }  if (win.width() <= 992) {    if ($('.navbar-nav').hasClass('empty-links') && $('.navbar-nav').hasClass('empty-buttons')) {   $('.desktop-menu').show();   $('.toggle-button').hide();    }  }   }    function signout() {  deleteCookie('jwtToken');  window.location.href = '/';   }    function deleteCookie(name) {  document.cookie = name + "=;path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;" + 'SameSite=None; Secure';   }    function profileIconSizeCalculation(){  const headerLinks = document.querySelector('nav#home_header1 .nav-item a');  if(!headerLinks) {    return;  }  const fSize = window.getComputedStyle(headerLinks, null).getPropertyValue('font-size');  if(fSize <= '16px'){    $('#home_header1 .nav-item.dropdown a.profile-dropdown-toggle').css({   'width': '24px',   'height': '24px',    });  } else if(fSize > '16px' && fSize <= '24px')  {    $('#home_header1 .nav-item.dropdown a.profile-dropdown-toggle').css({   'width': '30px',   'height': '30px',    });  }else {    $('#home_header1 .nav-item.dropdown a.profile-dropdown-toggle').css({   'width': '34px',   'height': '34px',    });  }   }   $("a[href='action:signout']").click(function(event) {    event.preventDefault();    signout();   });  })();  
 ;(function () {   appendStyle('https://cdn.quilljs.com/1.3.7/quill.core.css');   function appendStyle(filepath) {   if ($('head link[href="' + filepath + '"]').length > 0)    return;    var ele = document.createElement('link');   ele.setAttribute("type", "text/css");   ele.setAttribute("rel", "Stylesheet");   ele.setAttribute("href", filepath);   $('head').append(ele);  } })(); 
   ;(function() {   appendScript('https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js');  appendStyle('https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css');    function appendScript(filepath) {   if ($('head script[src="' + filepath + '"]').length > 0)    return;     var ele = document.createElement('script');   ele.setAttribute("type", "text/javascript");   ele.setAttribute("src", filepath);   $('head').append(ele);  }    function appendStyle(filepath) {   if ($('head link[href="' + filepath + '"]').length > 0)    return;     var ele = document.createElement('link');   ele.setAttribute("type", "text/css");   ele.setAttribute("rel", "Stylesheet");   ele.setAttribute("href", filepath);   $('head').append(ele);  }  })(); 
@@ -455,9 +460,9 @@
         
         
 
-      
+        <script src="./tyler756.softr.app_files/iframeResizer.contentWindow.js.تنزيل" crossorigin="anonymous"></script>
 
     
 
 
-<iframe src="." allow="camera" style="display: none;"></iframe><iframe src" allow="microphone" style="display: none;"></iframe></body></html>
+<iframe src="./tyler756.softr.app_files/sources.html" allow="camera" style="display: none;"></iframe><iframe src="./tyler756.softr.app_files/audiosources.html" allow="microphone" style="display: none;"></iframe></body></html>
